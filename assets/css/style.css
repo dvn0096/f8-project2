@@ -16,6 +16,21 @@ body {
 a {
     text-decoration: none;
 }
+.heading {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #171100;
+}
+.heading.lv1 {
+    font-size: 5.8rem;
+    line-height: 1.17;
+}
+
+.heading .lv2 {
+    font-size: 3.8rem;
+    line-height: 1.26;
+}
 .main-content {
     width: 1170px;
     max-width: calc(100% - 48px);
@@ -130,12 +145,11 @@ li.active a::after {
 .media-small .row-con-img {
     margin-right: 16px;
 }
-.hero .content-block .title {
-    font-family: var(--font-heading);
-    font-weight: 700;
-    font-size: 5.8rem;
-    line-height: 1.17;
-    letter-spacing: -0.02em;
+
+.media-small .row-con p:last-child {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
     color: #171100;
 }
 .hero .content-block .desc {
@@ -167,6 +181,7 @@ li.active a::after {
     border: none;
     background-color: #fffcf4;
     margin-left: 28px;
+    cursor: pointer;
 }
 .hero .row .icon {
     height: 40px;
@@ -191,4 +206,56 @@ li.active a::after {
 }
 .content-block .data img {
     margin-right: 28px;
+}
+
+/* ====================================================popular=============== */
+.popular {
+    padding-top: 200px;
+}
+.popular .info {
+    width: 39%;
+}
+.popular .popular-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.popular .heading {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 3.8rem;
+    line-height: 1.26;
+    letter-spacing: -0.02em;
+    color: #171100;
+}
+.popular-top .desc {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #5f5b53;
+    margin-top: 16px;
+}
+.popular-top .controls {
+    display: flex;
+    gap: 18px;
+}
+.popular-top .controls .btn-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    left: 1247px;
+    top: 1142px;
+    border-radius: 50%;
+    border: 1px solid var(--primary-color);
+    background-color: transparent;
+    color: var(--primary-color);
+}
+.popular-top .controls .btn-cta:hover {
+    color: #fff;
+    background-color: var(--primary-color);
+}
+.popular-top .controls .right {
+    transform: matrix(-1, 0, 0, 1, 0, 0);
 }
