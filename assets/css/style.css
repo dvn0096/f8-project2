@@ -13,23 +13,35 @@ body {
     font-family: "Poppins", sans-serif;
 }
 /* ==== common ======= */
+.line-clamp{
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp , 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
 a {
     text-decoration: none;
 }
 .heading {
     font-family: var(--font-heading);
-    font-weight: 700;
     letter-spacing: -0.02em;
     color: #171100;
 }
 .heading.lv1 {
+    font-weight: 700;
     font-size: 5.8rem;
     line-height: 1.17;
 }
 
-.heading .lv2 {
+.heading.lv2 {
+    font-weight: 700;
     font-size: 3.8rem;
     line-height: 1.26;
+}
+.heading.lv3 {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
 }
 .main-content {
     width: 1170px;
@@ -40,6 +52,7 @@ a {
 .btn {
     display: inline-block;
     min-width: 118px;
+    padding: 0px 16px;
     line-height: 50px;
     font-weight: 600;
     font-size: 1.6rem;
@@ -153,6 +166,7 @@ li.active a::after {
     color: #171100;
 }
 .hero .content-block .desc {
+    font-family: "Poppins", sans-serif;
     margin-top: 22px;
     font-weight: 400;
     font-size: 1.8rem;
@@ -167,7 +181,6 @@ li.active a::after {
 
 .hero .row .btn {
     min-width: 180px;
-    height: 64px;
     font-weight: 600;
     font-size: 1.8rem;
     line-height: 64px;
@@ -210,7 +223,8 @@ li.active a::after {
 
 /* ====================================================popular=============== */
 .popular {
-    padding-top: 200px;
+    padding: 200px 0px;
+    background: #e5e5e5;
 }
 .popular .info {
     width: 39%;
@@ -219,14 +233,6 @@ li.active a::after {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-.popular .heading {
-    font-family: var(--font-heading);
-    font-weight: 700;
-    font-size: 3.8rem;
-    line-height: 1.26;
-    letter-spacing: -0.02em;
-    color: #171100;
 }
 .popular-top .desc {
     font-weight: 400;
@@ -245,12 +251,11 @@ li.active a::after {
     justify-content: center;
     width: 40px;
     height: 40px;
-    left: 1247px;
-    top: 1142px;
     border-radius: 50%;
     border: 1px solid var(--primary-color);
     background-color: transparent;
     color: var(--primary-color);
+    cursor: pointer;
 }
 .popular-top .controls .btn-cta:hover {
     color: #fff;
@@ -258,4 +263,132 @@ li.active a::after {
 }
 .popular-top .controls .right {
     transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.popular .courses-list {
+    display: flex;
+    gap: 30px;
+    margin-top: 55px;
+    flex-wrap: nowrap;
+}
+.courses-item .thumb {
+    width: 370px;
+    height: 278px;
+    object-fit: cover;
+    border-radius: 12px 12px 0px 0px;
+}
+.courses-list .info {
+    width: 326px;
+    margin: 16px auto 22px;
+}
+.courses-list .info .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.courses-list .info-star {
+    display: flex;
+    align-items: center;
+}
+.courses-item {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 12px 12px 0px 0px;
+    padding-bottom: 22px;
+}
+
+.courses-item .star {
+    width: 18px;
+    height: 18px;
+    margin-right: 6px;
+}
+.courses-item .value {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #fea31b;
+}
+.courses-list .info .desc {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #5f5b53;
+}
+.courses-item .foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}
+.courses-item .foot .price {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #171100;
+}
+.courses-item .foot .btn {
+    font-size: 1.4rem;
+    border: none;
+}
+.courses-item .foot .btn:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+/* =====================================================================feel=============== */
+.feel {
+    background: #2e2100;
+    padding: 96px 0px;
+}
+.feel .feel-row {
+    display: flex;
+    justify-content: space-between;
+}
+.feel-row .row-left {
+    width: 14%;
+}
+.feel-row .row-right {
+    width: 66%;
+}
+.feel-row .icon {
+    height: 72px;
+    width: 72px;
+    border-radius: 50%;
+}
+.heading.lv4 {
+    font-size: 2.4rem;
+    line-height: 1.42;
+    color: #f7f7f7;
+    margin-top: 14px;
+}
+.row-left p {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #bfbcb3;
+    margin-top: 4px;
+}
+.feel .row-right {
+    display: flex;
+    position: relative;
+    width: 62%;
+    min-width: 770px;
+    height: 188px;
+}
+.row-right .icon {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.row-right .desc {
+    position: absolute;
+    min-width: 740px;
+    right: 0;
+    bottom: 0;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 2.6rem;
+    line-height: 1.54;
+    color: #ffffff;
 }
