@@ -598,6 +598,7 @@ li.active a::after {
 .footer .heading.lv5 {
     display: inline-block;
     padding: 0px 48px 20px 0px;
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 1.6rem;
     line-height: 1.75;
