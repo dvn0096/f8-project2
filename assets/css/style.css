@@ -13,9 +13,9 @@ body {
     font-family: "Poppins", sans-serif;
 }
 /* ==== common ======= */
-.line-clamp{
+.line-clamp {
     display: -webkit-box;
-    -webkit-line-clamp: var(--line-clamp , 1);
+    -webkit-line-clamp: var(--line-clamp, 1);
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
@@ -352,10 +352,10 @@ li.active a::after {
     border-radius: 50%;
     object-fit: cover;
 }
-.feedback-item .dots{
+.feedback-item .dots {
     display: flex;
 }
-.feedback-item .dot{
+.feedback-item .dot {
     width: 6px;
     height: 6px;
     margin-right: 6px;
@@ -364,7 +364,7 @@ li.active a::after {
     background: #634700;
     border-radius: 50%;
 }
-.feedback-item .dot.active{
+.feedback-item .dot.active {
     cursor: default;
     background: var(--primary-color);
 }
@@ -386,7 +386,7 @@ li.active a::after {
     width: 66%;
     margin-left: auto;
 }
- .row-right .icon-qty {
+.row-right .icon-qty {
 }
 .row-right .desc {
     font-style: italic;
@@ -395,4 +395,180 @@ li.active a::after {
     line-height: 1.54;
     color: #ffffff;
     margin-left: 30px;
+}
+/* ------------------- features */
+.features {
+    padding: 200px 0px;
+}
+.features .body {
+    display: flex;
+    justify-content: space-between;
+}
+.features .body .image {
+    gap: 30px;
+    width: 49%;
+}
+.features .body.head .image {
+    display: flex;
+}
+.features .body .content {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.features .body .image img {
+    object-fit: cover;
+    width: 270px;
+    height: 404px;
+    border-radius: 16px;
+}
+.features .body .img-left {
+    margin-top: 30px;
+}
+.features .body .desc {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #5f5b53;
+}
+.features .btn {
+    min-width: 137px;
+    margin-top: 32px;
+}
+.features .btn:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+.features .foot {
+    margin-top: 200px;
+}
+.features .foot .content {
+    margin-top: 0px;
+    border-radius: 20px;
+    width: 40%;
+}
+.features .foot .content img {
+    border-radius: 20px;
+    object-fit: cover;
+    width: 470px;
+    height: 440px;
+}
+/*             blog================== */
+.blog {
+    padding: 96px 0px 140px;
+    background: #fffcf4;
+}
+.blog .blog-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 39%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 55px;
+}
+.blog-top .desc {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #696262;
+}
+.blog .blog-list {
+    display: flex;
+    gap: 30px;
+    overflow: hidden;
+
+}
+.blog .blog-list .blog-item {
+    width: calc(33.33% - 20px);
+    background: #ffffff;
+    border-radius: 16px;
+    padding-bottom: 28px;
+    flex-shrink: 0;
+    transition: all ease .3s;
+    /* transform: translateX(-100%); */
+
+}
+.blog .blog-list .blog-item:hover{
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
+}
+.blog .blog-item .info {
+    margin: 0px 20px;
+    display: block;
+}
+.blog .blog-item .thumb {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 16px 16px 0px 0px;
+}
+.blog-list .dates {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+    padding-bottom: 13px;
+}
+.blog-list .date {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #5f5b53;
+}
+.blog-list .date::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #ffb900;
+    margin-right: 4px;
+}
+
+.blog-list .date::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    /* width: 160px; */
+    height: 1px;
+    background: #e2dfda;
+    border-radius: 0.5px;
+    bottom: 0;
+    left: 0;
+    right: -27px;
+}
+.blog .blog-item .desc {
+    margin: 12px 0px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #171100;
+}
+.blog .blog-item .btn:hover{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+.blog .dots{
+    margin-top: 38px;
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+
+}
+.blog .dot{
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #5F5B53;
+}
+.blog .dot.active{
+    background-color: var(--primary-color);
 }
