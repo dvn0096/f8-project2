@@ -335,25 +335,40 @@ li.active a::after {
     color: #fff;
 }
 /* =====================================================================feel=============== */
-.feel {
+.feed-back {
     background: #2e2100;
     padding: 96px 0px;
 }
-.feel .feel-row {
+.feed-back .feedback-item {
     display: flex;
     justify-content: space-between;
 }
-.feel-row .row-left {
-    width: 14%;
-}
-.feel-row .row-right {
+.feedback-item .row-right {
     width: 66%;
 }
-.feel-row .icon {
+.feedback-item .feedback-avatar {
     height: 72px;
     width: 72px;
     border-radius: 50%;
+    object-fit: cover;
 }
+.feedback-item .dots{
+    display: flex;
+}
+.feedback-item .dot{
+    width: 6px;
+    height: 6px;
+    margin-right: 6px;
+    margin-top: 26px;
+    cursor: pointer;
+    background: #634700;
+    border-radius: 50%;
+}
+.feedback-item .dot.active{
+    cursor: default;
+    background: var(--primary-color);
+}
+
 .heading.lv4 {
     font-size: 2.4rem;
     line-height: 1.42;
@@ -367,28 +382,17 @@ li.active a::after {
     color: #bfbcb3;
     margin-top: 4px;
 }
-.feel .row-right {
-    display: flex;
-    position: relative;
-    width: 62%;
-    min-width: 770px;
-    height: 188px;
+.feed-back .row-right {
+    width: 66%;
+    margin-left: auto;
 }
-.row-right .icon {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    top: 0;
-    left: 0;
+ .row-right .icon-qty {
 }
 .row-right .desc {
-    position: absolute;
-    min-width: 740px;
-    right: 0;
-    bottom: 0;
     font-style: italic;
     font-weight: 400;
     font-size: 2.6rem;
     line-height: 1.54;
     color: #ffffff;
+    margin-left: 30px;
 }
