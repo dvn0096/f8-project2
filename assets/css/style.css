@@ -567,3 +567,12 @@ li.active a::after {
 .blog .dot.active {
     background-color: var(--primary-color);
 }
+/* ============footer=========== */
+.footer{
+    padding: 96px 0px 26px;
+    /* background: #2E2100; */
+}
+.footer .row{
+    display: flex;
+    
+}
